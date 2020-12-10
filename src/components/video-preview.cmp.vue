@@ -1,5 +1,5 @@
 <template>
-  <div class="video-preview" @click.stop="setVideo(video.id)">
+  <div class="video-preview" @click.stop="setVideo(video)">
     <span class="flex-1">
       <img :src="video.thumbnail.url" class="video-image" />
     </span>
@@ -21,7 +21,7 @@ export default {
     return {};
   },
   methods: {
-    setVideo(videoId) {
+    setVideo(video) {
       this.$store.commit({ type: 'setCurrVideo', video });
     },
   },
