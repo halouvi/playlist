@@ -1,7 +1,7 @@
 <template>
   <section class="video-player">
     <youtube :video-id="currVideo" ref="youtube" @playing="playing"></youtube>
-    <button @click="playVideo">play</button>
+    <!-- <button @click="playVideo">play</button> -->
   </section>
 </template>
 
@@ -24,7 +24,7 @@ export default {
     },
   },
   created() {
-    console.log(this.currVideo);
+    // console.log(this.currVideo);
   }
 }
 </script>
