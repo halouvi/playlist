@@ -1,5 +1,6 @@
 <template>
   <div class="video-list">
+    <h1>lalala</h1>
     <ul v-for="(video, idx) in videos" :key="idx">
       <li>
         <video-preview :video="video" />
@@ -30,19 +31,7 @@ export default {
     videos() {
       return this.$store.getters.videos;
     },
-    // changeLinkTo(url) {
-    //   if (url) {
-    //     this.cmp.info.content = 'https://www.youtube.com/embed/' + url;
-    //   } else {
-    //     var embbedVal = this.input.replace('watch?v=', 'embed/');
-    //     var idx = embbedVal.indexOf('&');
-    //     this.cmp.info.content =
-    //       idx === -1
-    //         ? embbedVal.substring(0, embbedVal.length)
-    //         : embbedVal.substring(0, idx);
-    //   }
   },
   created() {},
-  // },
 };
 </script>

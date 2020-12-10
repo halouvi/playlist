@@ -1,5 +1,5 @@
 <template>
-  <div class="playlist">
+  <div class="playlist flex space">
     <video-list></video-list>
     <video-player :currVideo="currVideo" />
   </div>

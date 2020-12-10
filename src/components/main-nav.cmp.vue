@@ -1,6 +1,8 @@
 <template>
-  <div class="main-nav">
-    <h1 class="logo">YouD<span>oo</span>b</h1>
+  <div class="main-nav full">
+    <div class="container">
+      <h1 class="logo">YouD<span>oo</span>b</h1>
+    </div>
   </div>
 </template>
 

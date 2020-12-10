@@ -6,6 +6,9 @@
 		grid-column: 2;
 	}
 
+	.part {
+		grid-column: 2;
+	}
 	> .full {
 		grid-column: 1 / -1;
 	}
@@ -16,6 +19,10 @@
 	}
 }
 
+.container {
+	max-width: 1160px;
+	margin: 0 auto;
+}
 .card-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
