@@ -1,5 +1,5 @@
 <template>
-  <div class="video-preview" @click="emitVideo">
+  <div class="video-preview" @click="setVideo">
     <span class="flex-1">
       <img :src="video.thumbnail" class="video-image" />
     </span>
@@ -24,8 +24,9 @@ export default {
     return {};
   },
   methods: {
-    emitVideo() {
-      this.$emit('setVideo', this.video);
+    setVideo() {
+      // this.$emit('setVideo', this.video);
+      console.log('setting');
     },
   },
   created() {},
