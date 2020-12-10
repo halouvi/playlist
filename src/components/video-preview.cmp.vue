@@ -1,15 +1,12 @@
 <template>
-  <div class="video-preview">
+  <div class="video-preview" @click.stop="setVideo(video.id)">
     <span class="flex-1">
       <img :src="video.thumbnail.url" class="video-image" />
     </span>
     <span class="flex-2">
       <h2>{{ video.title }}</h2>
       <h5>{{ video.description }}</h5>
-    </span>
-    <span class="flex-3">
-      <button class="play-btn" @click.stop="setVideo(video.id)">►</button>
-    </span>
+    </span> 
   </div>
 </template>
 

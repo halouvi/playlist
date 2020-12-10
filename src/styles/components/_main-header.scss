@@ -1,24 +1,29 @@
 .main-nav {
-	.logo {
-		display: flex;
-		// align-items: center;
-		font-family: League;
-		letter-spacing: 3px;
-		color: rgb(225, 225, 225);
-		h1 {
-			margin: 0;
-		}
-		.red {
-			color: rgb(232, 17, 17);
-		}
-		img {
-			margin-left: 0.4rem;
-			padding-top: 0.3rem;
-			width: 3.8rem;
-			object-fit: contain;
-		}
-	}
-	background-color: $clr3;
-	height: 6rem;
-	margin-bottom: 2rem;
+  position: relative;
+  background-color: $clr3;
+  margin-bottom: 2rem;
+  .logo {
+    display: flex;
+    font-family: League;
+    letter-spacing: 3px;
+    color: $clr5;
+    h1 {
+      margin: 0;
+    }
+    .red {
+      color: $clr4;
+    }
+    img {
+      margin-left: 0.4rem;
+      padding-top: 0.3rem;
+      width: 3.8rem;
+      object-fit: contain;
+    }
+  }
+  .video-filter {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 }

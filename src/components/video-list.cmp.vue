@@ -1,11 +1,11 @@
 <template>
-  <div class="video-list">
-    <ul v-for="(video, idx) in videos" :key="idx">
-      <li>
+  <!-- <div > -->
+    <ul class="video-list">
+      <li v-for="(video, idx) in videos" :key="idx">
         <video-preview :video="video" />
       </li>
     </ul>
-  </div>
+  <!-- </div> -->
 </template>
 
 <script>
