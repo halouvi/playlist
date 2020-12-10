@@ -1,6 +1,6 @@
 <template>
-  <div class="main-nav full">
-    <div class="container flex space">
+  <div class="main-nav full main-layout">
+    <div class="part flex space">
       <span class="logo">
         <h1>YouD<span class="red">oo</span>b</h1>
         <img src="@/assets/youtube-logo.png" alt="" />

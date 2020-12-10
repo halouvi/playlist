@@ -22,7 +22,7 @@ export default {
   },
   methods: {
     setVideo(videoId) {
-      this.$store.commit({ type: 'setCurrVideo', videoId });
+      this.$store.commit({ type: 'setCurrVideo', video });
     },
   },
   created() {},

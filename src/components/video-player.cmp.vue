@@ -1,6 +1,6 @@
 <template>
   <section class="video-player">
-    <youtube :video-id="currVideo" ref="youtube" @playing="playing" :fitParent="true"/>
+    <youtube :video-id="currVideo.id" ref="youtube" @playing="playing" :fitParent="true"/>
     <!-- <button @click="playVideo">play</button> -->
   </section>
 </template>
@@ -8,14 +8,11 @@
 <script>
 export default {
   props: {
-    currVideo: String,
+    currVideo: Object,
   },
   methods: {
     playVideo() {
       this.player.playVideo()
-    },
-    playing() {
-      console.log('we are watching!!!', this.currVideo)
     },
   },
   computed: {
@@ -23,8 +20,5 @@ export default {
       return this.$refs.youtube.player
     },
   },
-  created() {
-    // console.log(this.currVideo);
-  }
 }
 </script>

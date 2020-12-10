@@ -1,14 +1,14 @@
 <template>
-  <div class="playlist flex space container">
-    <video-list />
-    <video-player :currVideo="getCurrVideo" />
+  <div class="playlist flex space">
+    <video-list :videos="videos" />
+    <video-player v-if="videos" :currVideo="getCurrVideo" />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import videoList from '@/components/video-list.cmp';
-import videoPlayer from '@/components/video-player.cmp';
+import videoList from '@/components/video-list.cmp'
+import videoPlayer from '@/components/video-player.cmp'
 
 export default {
   components: {
@@ -17,8 +17,11 @@ export default {
   },
   computed: {
     getCurrVideo() {
-      return this.$store.getters.currVideo;
+      return this.$store.getters.currVideo
+    },
+    videos() {
+      return this.$store.getters.videos
     },
   },
-};
+}
 </script>
