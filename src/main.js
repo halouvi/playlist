@@ -4,7 +4,8 @@ import './registerServiceWorker'
 import router from './router'
 import store from './store'
 import VueYoutube from 'vue-youtube'
- 
+ import "./styles/styles.scss";
+
 Vue.use(VueYoutube)
 Vue.config.productionTip = false
 
