@@ -1,5 +1,5 @@
 <template>
-  <div class="video-list" v-if="videos">
+  <div class="video-list">
     <ul v-for="(video, idx) in videos" :key="idx">
       <li>
         <video-preview :video="video" @setVideo="emitVideo" />
