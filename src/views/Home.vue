@@ -1,18 +1,24 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <main class="home">
+    <videoPlayer :videoId="videoId" />
+  </main>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import videoPlayer from '@/components/videoPlayer.cmp'
 
 export default {
-  name: 'Home',
+  computed: {
+    videoId() {
+      return this.$store.getters.videoId
+    },
+  },
   components: {
-    HelloWorld
+    videoPlayer,
+  },
+  created() {
+    console.log(this.videoId);
   }
 }
 </script>
