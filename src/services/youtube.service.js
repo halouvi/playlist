@@ -10,7 +10,7 @@ async function getVideos(searchTerm) {
     try {
         res = res.data.items.map(video => {
             return {
-                videoId: video.id.videoId,
+                id: video.id.videoId,
                 thumbnail: video.snippet.thumbnails.medium,
                 title: video.snippet.title,
                 description: video.snippet.description

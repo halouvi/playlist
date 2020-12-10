@@ -1,7 +1,12 @@
 <template>
   <form class="video-filter" @submit="setSearchTerm">
-    <input type="text" v-model="deBounce.txt" @input="deBounceSearchTerm" />
-    <input type="submit" />
+    <input
+      type="text"
+      v-model="deBounce.txt"
+      @input="deBounceSearchTerm"
+      placeholder="What would you like to hear?"
+    />
+    <button>Search</button>
   </form>
 </template>
 
@@ -17,22 +22,22 @@ export default {
         txt: null,
         timeout: null,
       },
-    }
+    };
   },
   methods: {
     deBounceSearchTerm() {
-      clearTimeout(this.deBounce.timeout)
+      clearTimeout(this.deBounce.timeout);
       this.deBounce.timeout = setTimeout(() => {
-        this.setSearchTerm()
-      }, 500)
+        this.setSearchTerm();
+      }, 500);
     },
     setSearchTerm() {
-      this.searchTerm = this.deBounce.txt
-      this.$emit('setSearchTerm', this.searchTerm)
+      this.searchTerm = this.deBounce.txt;
+      this.$emit('setSearchTerm', this.searchTerm);
     },
   },
   created() {
-    this.searchTerm = this.getSearchTerm
+    this.searchTerm = this.getSearchTerm;
   },
-}
+};
 </script>

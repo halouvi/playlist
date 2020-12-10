@@ -22,8 +22,8 @@ export default new Vuex.Store({
     },
   },
   mutations: {
-    setCurrVideo(state, { video }) {
-      state.currVideo = video
+    setCurrVideo(state, { videoId }) {
+      state.currVideo = videoId
     },
     setVideos(state, { videos }) {
       state.videos = videos

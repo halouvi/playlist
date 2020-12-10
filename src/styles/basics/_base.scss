@@ -30,6 +30,23 @@ p {
 	margin: 0 0 1em;
 }
 
-// img {
-// width: 100%;
-// }
+li {
+	list-style: none;
+}
+
+input {
+	width: 25rem;
+	height: 2.4rem;
+	padding: 0.4rem;
+	font-size: 1rem;
+	font-family: sans-serif;
+	font-weight: 100;
+}
+
+.video-filter {
+	button {
+		margin-left: 0.4rem;
+		padding: 10px 20px;
+		height: 2.4rem;
+	}
+}
