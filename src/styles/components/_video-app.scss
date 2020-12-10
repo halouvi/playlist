@@ -1,6 +1,7 @@
 .playlist {
   height: 80vh;
   .video-list {
+    @include scrollBar(0.5rem, lighten(black, 35%));
     flex: 2 1 0;
     padding: rem(20px);
     border: 1px solid $clr3;
@@ -30,8 +31,8 @@
     }
   }
   .video-player {
-	flex: 3 1 0;
-	// height: ;
+    flex: 3 1 0;
+    // height: ;
     iframe {
       width: 100%;
       height: 100%;
