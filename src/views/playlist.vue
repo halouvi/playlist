@@ -1,6 +1,9 @@
 <template>
-  <div class="home">
-    <video-filter :getSearchTerm="getSearchTerm" @setSearchTerm="setSearchTerm"/>
+  <div class="playlist flex space">
+    <video-filter
+      :getSearchTerm="getSearchTerm"
+      @setSearchTerm="setSearchTerm"
+    />
     <video-list />
     <video-player :currVideo="getCurrVideo" />
   </div>
