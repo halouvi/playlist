@@ -19,14 +19,6 @@ export default {
     getCurrVideo() {
       return this.$store.getters.currVideo;
     },
-    getSearchTerm() {
-      return this.$store.getters.searchTerm;
-    },
-  },
-  methods: {
-    setSearchTerm(searchTerm) {
-      this.$store.dispatch({ type: 'setSearchTerm', searchTerm });
-    },
   },
 };
 </script>

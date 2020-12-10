@@ -6,7 +6,7 @@
       @input="deBounceSearchTerm"
       placeholder="What would you like to hear?"
     />
-    <button>Search</button>
+    <input class="submit" type="submit" value="Search" />
   </form>
 </template>
 

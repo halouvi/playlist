@@ -24,7 +24,18 @@ export default {
   data() {
     return {};
   },
-  methods: {},
-  created() {},
+  computed: {
+    getSearchTerm() {
+      return this.$store.getters.searchTerm;
+    },
+  },
+  methods: {
+    setSearchTerm(searchTerm) {
+      this.$store.dispatch({ type: 'setSearchTerm', searchTerm });
+    },
+  },
+  created() {
+    this.setSearchTerm('radiohead');
+  },
 };
 </script>

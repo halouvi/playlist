@@ -1,6 +1,6 @@
 .main-layout {
 	display: grid;
-	grid-template-columns: minmax(2rem, 1fr) minmax(auto, 1160px) minmax(2rem, 1fr);
+	grid-template-columns: minmax(2rem, 1fr) minmax(auto, 1460px) minmax(2rem, 1fr);
 
 	> * {
 		grid-column: 2;
@@ -20,6 +20,6 @@
 }
 
 .container {
-	max-width: 1160px;
+	max-width: 1460px;
 	margin: 0 auto;
 }

@@ -1,6 +1,6 @@
 <template>
   <section class="video-player">
-    <youtube :video-id="currVideo" ref="youtube" @playing="playing"></youtube>
+    <youtube :video-id="currVideo" ref="youtube" @playing="playing" :fitParent="true"/>
     <!-- <button @click="playVideo">play</button> -->
   </section>
 </template>
