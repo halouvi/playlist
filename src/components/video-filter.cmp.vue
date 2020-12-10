@@ -1,7 +1,7 @@
 <template>
   <form class="video-filter" @submit="setSearchTerm">
     <input type="text" v-model="deBounce.txt" @input="deBounceSearchTerm" />
-    <input type="submit" />
+    <input type="submit" value="Search" />
   </form>
 </template>
 

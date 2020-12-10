@@ -31,8 +31,11 @@ export default {
   },
   methods: {
     setSearchTerm(searchTerm) {
-      this.$store.dispatch({type: 'setSearchTerm', searchTerm})
-    }
-  }
+      this.$store.dispatch({ type: 'setSearchTerm', searchTerm })
+    },
+  },
+  created() {
+    this.setSearchTerm('radiohead')
+  },
 }
 </script>
