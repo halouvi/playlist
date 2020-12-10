@@ -6,7 +6,7 @@ export const youtubeService = {
 }
 
 async function getVideos(searchTerm) {
-    var res = await axios.get(`https://www.googleapis.com/youtube/v3/search?part=snippet&videoEmbeddable=true&type=video&key=AIzaSyDUV8Bo2XWjps_p1U8b9lsVXK9wJ0MRlcg&q=${searchTerm}`)
+    var res = await axios.get(`https://www.googleapis.com/youtube/v3/search?part=snippet&videoEmbeddable=true&type=video&key=AIzaSyC1IyV2W9PZTl0fv2-1SUzT6Kz6X9LC1do&q=${searchTerm}`)
     try {
         res = res.data.items.map(video => {
             return {
