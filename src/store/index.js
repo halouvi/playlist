@@ -7,7 +7,7 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     searchTerm: '',
-    currVideo: null,
+    currVideo: '2CXD8PK6Djc',
     videos: null,
   },
   getters: {
