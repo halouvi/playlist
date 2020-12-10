@@ -50,7 +50,7 @@ input {
   &:focus {
     outline: 0px;
   }
-  .submit {
+  &.submit {
     margin-left: 0.4rem;
     width: fit-content;
     cursor: pointer;
