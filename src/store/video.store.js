@@ -1,4 +1,4 @@
-import { from } from 'core-js/fn/array'
+// import { from } from 'core-js/fn/array'
 // import { youtubeService } from '@/services/youtubeService.js'
 
 export default {
