@@ -1,10 +1,21 @@
 .main-nav {
 	.logo {
+		display: flex;
+		// align-items: center;
 		font-family: League;
-		letter-spacing: 2px;
+		letter-spacing: 3px;
 		color: rgb(225, 225, 225);
-		span {
-			color: rgb(172, 41, 41);
+		h1 {
+			margin: 0;
+		}
+		.red {
+			color: rgb(232, 17, 17);
+		}
+		img {
+			margin-left: 0.4rem;
+			padding-top: 0.3rem;
+			width: 3.8rem;
+			object-fit: contain;
 		}
 	}
 	background-color: $clr3;

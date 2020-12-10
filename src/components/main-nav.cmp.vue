@@ -1,7 +1,10 @@
 <template>
   <div class="main-nav full">
     <div class="container">
-      <h1 class="logo">YouD<span>oo</span>b</h1>
+      <span class="logo">
+        <h1>YouD<span class="red">oo</span>b</h1>
+        <img src="@/assets/youtube-logo.png" alt="" />
+      </span>
     </div>
   </div>
 </template>
