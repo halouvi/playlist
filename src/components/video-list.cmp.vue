@@ -2,7 +2,7 @@
   <div class="video-list" v-if="videos">
     <ul v-for="(video, idx) in videos" :key="idx">
       <li>
-        <video-preview :video="video" />
+        <video-preview :video="video" @setVideo="emitVideo" />
       </li>
     </ul>
   </div>
@@ -32,6 +32,14 @@ export default {
     return {};
   },
   methods: {
+    emitVideo() {
+      this.$emit('setVideo', this.video);
+    },
+  },
+  computed: {
+    videos() {
+      return this.$store.getters.videos;
+    },
     // changeLinkTo(url) {
     //   if (url) {
     //     this.cmp.info.content = 'https://www.youtube.com/embed/' + url;

@@ -1,16 +1,16 @@
 <template>
-  <div class="home main-layout">
-    <main-nav />
+  <div class="home">
+    <video-list />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import mainNav from '@/components/main-nav.cmp';
+import videoList from '@/components/video-list.cmp';
 export default {
   name: 'playlist',
   components: {
-    mainNav,
+    videoList,
   },
 };
 </script>

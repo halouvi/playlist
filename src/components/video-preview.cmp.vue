@@ -1,5 +1,5 @@
 <template>
-  <div class="video-preview" v-if="video">
+  <div class="video-preview" v-if="video" @click="emitVideo">
     <img :src="video.thumbnail" class="video-image" />
     <h2>{{ video.title }}</h2>
     <h5>{{ video.desc }}</h5>
@@ -16,7 +16,11 @@ export default {
   data() {
     return {};
   },
-  methods: {},
+  methods: {
+    emitVideo() {
+      this.$emit('setVideo', this.video);
+    },
+  },
   created() {},
 };
 </script>
